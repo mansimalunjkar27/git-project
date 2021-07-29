@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <img src="ball.png" class="myimg" id="im1" >
+   <button class="btn"> move on</button>
+
+    <script>
+        $(document).ready(
+            function()
+            {
+                $("btn").click(
+                    function(){
+                        $("#im1").slideDown("1000");
+                    }
+                );
+            }
+        );
+    
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="json1.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form >
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" name="name" id="name">
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" id="uname" >
+          </div>
+<div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" id="mobile">
+          </div>
+         
+        </div>
+        
+        </div>
+        <div class="button">
+          <input id="btn" type="button" value="Submit" onclick="validform()">
+          <button type="button" onclick="AjaxPostCalls()">AJAX</button>
+          <input type="button" value="Download JSON" onclick="DownloadJSON()">
+        </div>
+        <div id="demo"> output
+           
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

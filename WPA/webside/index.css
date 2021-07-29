@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&family=Zen+Loop:ital@1&display=swap");
+*{
+    margin: 20;
+    padding: 50;
+}
+body{
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 20 20 20 20;
+}
+.container{
+    font-family: 'Roboto Condensed', sans-serif ;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.container h2{
+    font-size: 40px;
+    display: inline-block;
+    border-bottom: 3px solid rgb(139, 32, 139);
+    margin: 10px 0px; 
+     padding: 10px 0px; 
+}
+.box
+{
+    width: 120%;
+     border-bottom: 3px solid rgb(207, 53, 207); 
+     margin: 8px 0px;
+}
+.box input
+{
+    background: none;
+    border-radius: 10px;
+    width: 80%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: rgb(64, 30, 189);
+}
+.box i{
+    width: 30px;
+    text-align: center;
+    /* padding: 0px 6px; */
+}
+.btn{
+    cursor:pointer;
+    outline: none;
+    width: 25%;
+    margin: 12px 0;
+    padding: 6px;
+    tab-size: 10px;
+    border-color: rgb(158, 26, 140) ;
+    background-color: rgb(19, 23, 36);
+    border-radius: 10px;
+    color: white;
+    
+}

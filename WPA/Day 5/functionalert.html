@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function showHelloWorld()
+        {
+            var date=new Date();
+            var hour=date.getHours();
+            DisplayGreeting(hour);
+            function DisplayGreeting(hour)
+            {
+                if(hour>22|| hour<=5)
+                    document.write("GoodNight,World !...");
+                else
+                    document.write("Hello,World!!!");
+            }  
+        }
+    </script>
+</head>
+<body>
+    <p>Your result : </p><p id="p1"> </p>
+    <input type="button" onclick="showHelloWorld()"  value="Hello">
+</body>
+</html>

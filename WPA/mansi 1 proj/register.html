@@ -1,0 +1,136 @@
+<!DOCTPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>register here</title>
+    <style>
+                .ltheme{
+        background-color:rgb(69, 66, 247);
+        color:white;
+
+        padding:20px; 
+        border: 2px solid black;
+        }
+        
+        .myfooter{
+        background-color:black;
+        color:white;
+        padding:20px; 
+        border: 2px solid black;
+        font-size:20;
+        }
+
+    </style>
+</head>
+<body>
+    
+<div class="ltheme">  <h1 >Student Registration Form</h1>  
+
+    <button onclick="src='login.html'" >Login</button>
+    <script>
+        function myFunction() {
+          alert("you have to login first");
+        }
+    </script>
+        
+    </div>
+    
+    <div id="div2">
+    <form  oninput="parseInt(agerange.value)">
+    <fieldset> 
+    <legend>Student Personal Information </legend>
+    <label for="sname" >Student Name </label>
+    <input type="text" id="stdname" name="sname" >
+    <br>
+    <br>
+    Gender
+    <input type="radio" id="mgen" name="gen" value="M">
+    <label for="mgen" >Male </label>
+    <input type="radio" id="fgen" name="gen"  value="F">
+    <label for="fgen" >Female </label><br>
+    <br><br>
+    <label for="tpw" >Password</label>
+    <input type="password" id="tpw">
+    </fieldset>
+    <fieldset> 
+    <legend>Student Educational Information </legend>
+    <br>
+    <input type="checkbox" id="cb1" name="chbox1" value="DAC">
+    <label for="cb1" >DAC Course</label><br>
+    
+    <input type="checkbox" id="cb2" name="chbox2" value="WiMC Course">
+    <label for="cb1" >WiMc Course</label>
+    <br>
+    
+    <input type="checkbox" id="cb3" name="chbox3" value="ITSS Course">
+    <label for="cb1" >ITSS Course</label>
+    
+    <br>
+    <br>
+    <label for="edu" >Education</label>
+    <select id="edu" name="sedu">
+      <option value="BE">Bachlor of Engineer </option>
+      
+      <option value="ME">Master of Engineer </option>
+      <option value="BCS">Bachlor of Science </option>
+      <option value="MSC">Master of Science </option>
+      
+    </select>
+    
+    </fieldset>
+    <br>
+    <br>
+    <fieldset> 
+    <legend>Student Correspondance Information </legend>
+    <label for="tadd" >Address</label>
+    <textarea name="tadd" rows="10" cols="30"> Address </textarea>
+    
+    <br>
+    <br>
+    <label for="state" >State</label>
+    <input list="statelist">
+    
+    <datalist id="statelist">
+        <option value="Maharashtra">
+        <option value="Gujarat">
+        <option value="MP">
+        <option value="UP">
+    </datalist>
+    
+    <br>
+    <br>
+    <label for="eml" >Email</label>
+    <input type="email" name="eml">
+    <br>
+    <br>
+    <label for="mob" >Mobile</label>
+    <input type="tel" name="mob" pattern="[0-9]{3}-[0-9]{10}">
+    <br>
+    <br>
+    <label for="resume" >Upload Resume</label>
+    <input type="file" name="resume">
+    
+    </fieldset>
+    
+    Age 0 <input type="range" title="agerange.value" name="agerange"> 100 <output name="age" for="agerange"> </output>
+    
+    <p id="myp"> Date :   </p>    
+    <input type="submit" value="Submit">
+    <input type="button" style="background-color:rgb(63, 24, 95)" onclick="document.getElementById('div2').getElementById('myp').innerHTML=Date()" name="sub" value="Save">
+    <input type="reset" name="reset">
+    
+    </form>
+    
+    </div>
+    
+    <div class="myfooter">
+    
+     Website Designed and Developed By : Mansi Malunjkar
+     
+    </div>
+    
+</body>
+</html>

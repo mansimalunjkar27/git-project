@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Welcome To Mypage : Jquery selector</h1>
+    <div id="box" class="test" style="border: solid;">
+        <h2>Test Box 2</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consequatur praesentium debitis, iure repellat suscipit voluptatibus exercitationem repudiandae omnis, nihil voluptatem ab officiis? Quos laboriosam neque laborum? </p>
+    </div>
+    <ul id="list">
+        <li>Orange</li>
+        <li class="test">Banana</li>
+        <li>Grapes</li>
+        <li class="test">Apple</li>
+        <li>Guava</li>
+    </ul>
+
+    <section class="text">
+        CLICK THE BUTTON TO<br> CHANGE THE BACKGROUND!
+    </section>
+
+    <button id="btn">CLICK ME!</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $("#list").css("color","red");
+            $("#list li").css("border","2px solid green");
+            $("* p").css("color","blue");
+        });
+
+        $("#btn").click(function(){
+         $("body").css('background',"rgba(255, 0, 0, 0.2)")});
+
+
+        $("body").on({
+        mouseenter: function(){
+            $(this).css("background-color", "lightgray");
+        },  
+       
+        mouseleave: function(){
+            $(this).css("background-color", "lightblue");
+        },
+       
+        dblclick: function(){
+            $(this).css("background-color", "yellow");
+        }
+    });
+   
+    </script>
+</body>
+</html>

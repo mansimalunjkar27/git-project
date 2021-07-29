@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    var x=function (a,b)
+    {
+        var c=a+b;
+        document.getElementById('p1').innerHTML=c;
+    }
+    var y=function (a,b)
+    {
+        var c=a-b;
+        document.getElementById('p1').innerHTML=c;
+    }
+    </script>
+</head>
+<body>
+    <p>Your result : </p><p id="p1"> </p>
+    <input type="button" onclick="x(40,50)" value="show addition">
+    <input type="button" onclick="y(40,50)" value="show subtraction">
+</body>
+</html>
