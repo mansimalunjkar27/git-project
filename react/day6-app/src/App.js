@@ -8,7 +8,8 @@ function App()
  let[active,setActive] = useState(true);
  let[list,setList] = useState(["delhi","pune","mumbai"]);
  
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+ 
   return (
     <div>
       <h1>Stateful Continue</h1>
