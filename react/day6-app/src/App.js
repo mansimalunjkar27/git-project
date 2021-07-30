@@ -15,8 +15,11 @@ let [comment2,setComment2]=useState([]);
 let Post=()=>
 {
   let add = [comment,...comment2];
+ 
+  alert("you have posted this app :: "+comment);
   setComment2(add);
   console.log(add);
+  setComment("");
 };
 let handleInputChange=(e)=>{
   
