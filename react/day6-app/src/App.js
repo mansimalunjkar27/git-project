@@ -103,6 +103,6 @@ function myRegisterComponent(){
                 </form>
       </div>
     );
-};
+}
 
 export default App;
