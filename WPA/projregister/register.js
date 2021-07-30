@@ -9,7 +9,7 @@ function registration()
     
     var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
     var letters = /^[A-Za-z]+$/;
-    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-]{3})+\.)+([a-zA-Z0-9]{3,3})+$/;
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-]{5})+\.)+([a-zA-Z0-9]{3,3})+$/;
     var length=name.length;
 
             if(name=='')
@@ -19,8 +19,6 @@ function registration()
 		else if(!letters.test(name))
 		{
             document.getElementById("namespan").innerHTML="** Name field required only alphabet characters";
-
-			
 		}
             else if(length==0 || length<5)
             {
@@ -29,7 +27,7 @@ function registration()
             }
             else if(email=='')
 		{
-                  document.getElementById("namespan");
+            document.getElementById("namespan");
             document.getElementById("emailspan").innerHTML="** Please enter your user email id";   
 		}
 		else if (!filter.test(email))
@@ -76,8 +74,7 @@ function registration()
             else
             {				                            
                   alert('Thank You for register Welcome to Coupon Dunia!!');
-                  window.location=" ";
-                  
+                  window.location=" ";   
             }
 }
 
