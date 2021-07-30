@@ -3,21 +3,17 @@ import './App.css';
 import {useState} from "react";
 function App() 
 {
- let[name] = useState("cdac");
- let[counter] = useState(100);
- let[active] = useState(false);
- let[list] = useState(["delhi","pune","mumbai"]);
- let[std1] = useState({name:"mansi"});
+ let[name,setName] = useState("cdac");
+ let[counter,setCounter] = useState(100);
+ let[active,setActive] = useState(true);
+ let[list,setList] = useState(["delhi","pune","mumbai"]);
+ 
 
   return (
     <div>
-      <h1>learning to declare stateful variable</h1>
-      <h1>String :: {name}</h1>
-      <h1>Number :: {counter}</h1>
-      <h1>Boolean :: {active + ""}</h1>
+      <h1>Stateful Continue</h1>
+      <h1>Counter :: {counter}</h1>
       <h1>List :: {list}</h1>
-      <h1>Object :: {JSON.stringify(std1)}</h1>
-      <h1>Objec :: {std1.name} </h1>
     </div>
   );
 }
