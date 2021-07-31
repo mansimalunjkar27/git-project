@@ -12,6 +12,7 @@ body {
   text-align: center;
   font-size: xx-large;
   margin-top: 5%;
+  padding: 50px;
   font-family: cursive;
 }
 
@@ -24,6 +25,7 @@ body {
 }
 .pages p{
   font-size: 20px;
+
 }
 .pages table{
   position:inherit;
