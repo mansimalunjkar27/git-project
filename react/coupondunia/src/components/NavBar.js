@@ -11,7 +11,7 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            CouponDuniya
+            Coupon Duniya
             <i className="fas fa-code"></i>
           </NavLink>
 
@@ -68,7 +68,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Register
+                Regester
               </NavLink>
             </li>
           </ul>
